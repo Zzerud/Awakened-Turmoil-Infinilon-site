@@ -1,0 +1,80 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kadwa', serif;
+    background-image: linear-gradient(to bottom, #00CFFD, #0066FF);
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.sorry {
+    line-height: 1.6;
+    font-size: 3vw;
+    color: white;
+    max-width: 100%;
+}
+
+.infinilon__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #7A7A7A;
+    margin-bottom: 10px;
+}
+
+.footer {
+    width: 100%;
+}
+
+.footer__text {
+    font-size: 1vw;
+    color: white;
+    max-width: 100%;
+}
+
+/* Медиазапросы для более точной адаптации на маленьких экранах */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        max-width: 425px;
+    }
+    
+    .sorry {
+        font-size: 5vw;
+    }
+    .footer__text {
+        font-size: 2vw;
+    }
+
+    .infinilon__vector{
+        width: 82px;
+        height: 82px;
+    }
+    .infinilon__name{
+        width: 328px;
+        height: 58px;
+    }
+}
